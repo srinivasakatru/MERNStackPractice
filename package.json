@@ -4,7 +4,8 @@
   "description": "Practice of MERN stack app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node server.js --ignore public/*",
+    "dev":"webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/srinivasakatru/MERNStackPractice/issues"
   },
-  "homepage": "https://github.com/srinivasakatru/MERNStackPractice#readme"
+  "homepage": "https://github.com/srinivasakatru/MERNStackPractice#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.7",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.17.4",
+    "webpack": "^4.7.0"
+  }
 }
